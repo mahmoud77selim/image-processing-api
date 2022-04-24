@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  nodejs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nodejs
+    container_name: imageprocessingapi
+    restart: unless-stopped
+    env_file: .env
+
+    ports:
+      - '8080:8080'
+    volumes:
+      - .:/
+      - node_modules:/node_modules
+    networks:
+      - app-network
+    command: ./wait-for.sh -- /node_modules /nodemon [ "npm", "start", "build" ] [ "npm", "start", "run" ]

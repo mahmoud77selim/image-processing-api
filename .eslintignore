@@ -1,0 +1,4 @@
+# src/public/thumbs/*
+node_modules/
+build/
+spec

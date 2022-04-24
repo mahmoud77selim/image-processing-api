@@ -1,0 +1,64 @@
+{
+  "name": "image-processing-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon",
+    "build": "rimraf ./build && tsc",
+    "prod": "npm run build && NODE_ENV=production && npm run start",
+    "lint": "eslint . --ext .ts",
+    "lint-fix": "eslint . --ext .ts --fix",
+    "jasmine": "npm run build && jasmine",
+    "test": "jasmine ",
+    "prettier": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mahmoud77selim/image-processing-api"
+  },
+  "keywords": [],
+  "author": "mahmoud77selim",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "express": "^4.17.3",
+    "jasmine": "^4.1.0",
+    "sharp": "^0.30.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/jasmine": "^4.0.3",
+    "@types/jest": "^27.4.1",
+    "@types/mock-fs": "^4.13.1",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^17.0.25",
+    "@types/sharp": "^0.30.2",
+    "@types/supertest": "^2.0.12",
+    "@types/typescript": "^2.0.0",
+    "@types/validator": "^13.7.2",
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "fs": "^0.0.1-security",
+    "jasmine-spec-reporter": "^7.0.0",
+    "jasmine-ts": "^0.4.0",
+    "jest": "^27.5.1",
+    "mock-fs": "^5.1.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
+    "supertest": "^6.2.2",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}

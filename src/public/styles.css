@@ -1,0 +1,70 @@
+html {
+  display: table;
+  width: 100%;
+  height: 100%;
+  color: rgb(240, 209, 240);
+  background-color: #1e0c5f;
+}
+body {
+  display: table-cell;
+  text-align: center;
+}
+
+.footer {
+  padding: 1.5em;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  position: fixed;
+  bottom: 0.1px;
+  font-size: 1vw;
+  text-align: center;
+}
+
+.topnav {
+  top: 0;
+  overflow: hidden;
+  background-color: rgb(168, 168, 21);
+  display: inline-flex;
+  list-style: none;
+  text-align: center;
+  width: 99%;
+  vertical-align: middle;
+  margin: 4px;
+}
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 19px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+.topnav a:hover {
+  background: #11a75c;
+  color: #fff;
+  text-align: center;
+  transition: ease 0.3s all;
+}
+
+.resized-image {
+  margin: 6px;
+}
+.provided-parameters {
+  text-decoration: bold;
+}
+.info {
+  margin-bottom: 2px;
+}
+.noParameters > h3 {
+  color: red;
+}
+.page-not-found {
+  padding-top: 400px;
+  text-align: center;
+  background-image: url(./404.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+  background-attachment: fixed;
+}
